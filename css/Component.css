@@ -1,0 +1,314 @@
+body{
+    background-image: linear-gradient(to bottom right, #FFECD2 , #FCB69F);
+    margin: 0;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.reg-form {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.reg-form form{
+    border: 2px solid black;
+    border-radius: 2em;
+    background-image: linear-gradient(to top ,#BFF098 , #6FD6FF );
+    padding: 1.2em 1.2em;
+    box-shadow: 0.2em 0.3em;
+}
+
+.reg-form input{
+    display: block;
+    margin: 1em;
+    border-radius: 0.6em;
+    height: 1.8em;
+    width: 20em;
+    font-weight: bold;
+}
+
+.reg-form h2{
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+.reg-form input.btn {
+    width: 11em;
+    margin: auto;
+    background: #0aec00;
+    font-style: bold;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.reg-form input:hover{
+    border: 2px solid black;
+    background-color: rgba(144, 139, 139,0.5);
+}
+
+.header{
+    background-color: white;
+    position:sticky;
+    top: 0;
+    box-shadow: 0px 2px 5px;
+    z-index:100;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.5em;
+}
+
+nav a , .flex a {
+ text-decoration: none;
+ color: black;
+ padding: 0px 0.5em;
+ font-weight: bold;
+}
+nav a , .icons i{
+    font-size: 1.2em;
+    cursor:pointer;
+}
+#menu {
+    padding-right: 1em;
+}
+
+.flex > a {
+    font-size: 2em;
+}
+
+span{
+    color:blue  
+}
+
+nav a:hover ,.icons i:hover {
+    color:#6FD6FF;
+}
+
+.profile{
+    position: absolute;
+    top:120%; right: 5em;
+    border: 2px solid rgb(132, 193, 131);
+    border-radius: 0.5em;
+    padding: 1em;
+    box-shadow: 2px 2px 3px;
+    width: 14em;
+    display:none;
+    animation: fadeIn .2s ease-in-out;
+    background-color: white;
+}
+
+@keyframes fadeIn{
+    0%{
+        transform : translateY(-0.5em);
+    }
+}
+
+.profile.active{
+    display: inline-block;
+}
+.profile p{
+    text-align: center;
+    margin-top: 0px;
+    font-weight: bold;
+}
+
+a.updtprofile-btn {
+    background-color: #1be91b;
+    border-radius: 0.5em;
+    padding: 0.5em 0em;
+    display: block;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+a.logout-btn{
+    background-color: red;
+    border-radius: 0.5em;
+    padding: 0.5em 0em;
+    display: block;
+    text-align: center;
+}
+
+a.login-btn{
+    background-color: rgb(181, 42, 194);
+    border-radius: 0.5em;
+    padding: 0.5em 2.3em;
+}
+
+a.register-btn{
+    background-color: rgb(181, 42, 194);
+    border-radius: 0.5em;
+    padding: 0.5em 1.3em;
+}
+
+a.updtprofile-btn:hover , a.logout-btn:hover , a.login-btn:hover , a.register-btn:hover{
+    background: grey;
+}
+
+
+.flex-btn {
+    margin-top: 1em;
+}
+
+.title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5em;
+    margin-top: 1.4em;
+    margin-bottom:0em;
+}
+
+.update-profile form{
+    max-width: 35%;
+    margin:0 auto;
+    border: 2px solid green;
+    border-radius: .5em;
+    padding: 2em;
+    text-align: center;
+    box-shadow: 5px 5px 10px;
+    background-color: gainsboro;
+}
+
+.update-profile .input-box input{
+    align-items: center;
+    margin: 0.5em auto;
+    width: 20em;
+    height: 1.8em;
+    text-align: center;
+    border-radius: 0.5em;
+    border: 2px solid grey;
+}
+
+.update-profile .input-box span{
+    color:black;
+    font-size: 1.5em;
+}
+
+.update-profile .input-box input,.update-profile .input-box span{
+    display: block;
+}
+
+.update-profile .input-box input:hover{
+    background: #FFECD2;
+    border: 2px solid black;
+    box-shadow: .1em .1em 0.2em;
+}
+
+.update-btn{
+    background-color: #37df37;
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+    display: block;
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+}
+
+.update-btn:hover{
+    background-color: #00fc00;
+    cursor: pointer;
+}
+.foot{
+    background: rgb(232 225 225);
+    padding-bottom: 15px;
+    margin-top: 60px;
+}
+
+.foot-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.foot-container .foot-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.foot-container .foot-box a {
+    text-decoration: none;
+    color: black;
+    padding: 0.5em;
+}
+
+.foot-container .foot-box a i{
+    text-decoration: none;
+    color: rgb(195, 64, 224);
+}
+
+.foot-container .foot-box a:hover {
+    color:rgb(109, 198, 100);
+}
+
+.message{
+    position:sticky;
+    top:0;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: grey;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5em;
+    z-index:100000;
+}
+
+.message span{
+    cursor:pointer;
+    color:black;
+}
+
+.message i:hover{
+    color: black;
+}
+
+
+/* media query */
+
+@media (max-width:750px){
+    .reg-form input {
+        width: 13em;
+    }
+    body{
+        font-size: 10px;
+    }
+    .update-profile .input-box input{
+        width: 10em;
+        height:1.2em;
+        font-size: 2em;
+    }
+    .update-btn{
+        font-size: 1.5em;
+        padding: 0.1em 0.5em;
+    }
+    .update-profile .input-box span{
+        font-weight: bold;
+    }
+}
+
+@media (max-width:490px){
+    .reg-form input {
+        width: 15em;
+    }
+    body{
+        font-size: 6px;
+    }
+    .update-profile form{
+        max-width: 50%;
+    }
+    .update-btn{
+        font-size: 1.5em;
+    }
+    .update-profile .input-box input{
+        width: 9em;
+        height: 1em;
+        font-size: 1.5em;
+        
+    }
+}
+

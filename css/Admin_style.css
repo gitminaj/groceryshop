@@ -1,0 +1,289 @@
+@import url('Component.css');
+
+.dashboard{
+    width: 80%;
+    margin: 6em auto;
+}
+
+.dashboard .title{
+    margin-bottom: 1em;
+}
+
+.box-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box{
+    width: 16%;
+    text-align: center;
+    border: 2px solid white;
+    margin: 1em ;
+    background: #fea;
+    box-shadow: 0.4em 0.4em 0.3em;
+    border-radius: 20px;
+    height: 27em;
+}
+
+.admpgbox{
+    width: 20%;
+    text-align: center;
+    border: 2px solid white;
+    margin: 1em auto;
+    background: wheat;
+    box-shadow: 0.4em 0.4em 0.5em;
+    border-radius: 0.3em;
+    height: 10em;
+}
+
+.flex-btn {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.btn:hover{
+    background: #2ee489;;
+}
+
+.btn{
+    width: 35%;
+    text-decoration: none;
+    color: black;
+    background: springgreen;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border: 2px solid #5a695d;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.box-container .box h3{
+    font-size: 2em;
+    margin-bottom: 0px;
+    margin-top: 0.5em;
+}
+
+.add-products form{
+    max-width: 40%;
+    padding: 1.5em;
+    text-align: center;
+    border: 2px solid black;
+    box-shadow: 0.4em 0.4em 0.5em;
+    background: wheat;
+    margin: 1em auto;
+    border-radius: 0.7em;
+}
+
+.add-products form .apflex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.add-products form .apflex .apinputbox{
+    width: 49%;
+}
+
+.add-products form .apbox{
+    width: 100%;
+    margin: 0.5em 0;
+    padding: 0.5em 0.1em;
+    font-size: 1em;
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.apbox:focus {
+    outline: none;
+}
+
+.add-products form .apbox:hover {
+    background: rgb(226, 217, 217);
+}
+
+
+.add-products form textarea{
+    resize: none;
+}
+
+.box img{
+    width: 90%;
+    height: 60%;
+    border-radius: 30px;
+}
+
+.option-btn{
+    text-decoration: none;
+    background-color: white;
+}
+
+.delete-btn{
+    text-decoration: none;
+    background-color: white;
+}
+
+.delete-btn:hover{
+    text-decoration: none;
+    background-color: orangered;
+}
+
+.details{
+    font-size: 0.8em;
+    margin-top: 12px;
+}
+
+.cat{
+    font-size: 0.9em;
+}
+
+.name{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.show-products .box-container .box .price{
+    background-color: #063df3;
+    color: white;
+    border-radius: 0.3em;
+    width: 38%;
+    height: 25px;
+    margin-bottom: 4px;
+    padding-top: 5px;
+}
+
+.aupbox-con form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 35%;
+    margin: 1em auto;
+    background: whitesmoke;
+    border: 2px solid black;
+    border-radius: 0.3em;
+    box-shadow: 0.3em 0.3em 0.5em;
+}
+
+.aupbox-con form input , .aupbox-con form select.aupbox ,.aupbox-con form textarea{
+    margin: 1em ;
+    width: 81%;
+    padding: 0.4em;
+    border: 2px solid black;
+    border-radius: 0.3em;
+}
+
+.aupbox-con form textarea{
+    resize: none;
+}
+
+.aupbox-con form select.aupbox{
+    width: 84%;
+}
+
+.aupbox-con form img{
+    height: auto;
+    width: 74%;
+    margin: 1em;
+    border-radius: 10px;
+}
+
+.aupbox-con form input[type="file"]{
+    background-color: white;
+}
+
+.aupbox-con form input:hover, .aupbox-con form select.aupbox:hover, .aupbox-con form textarea:hover {
+    cursor: pointer;
+    background: seashell;
+}
+
+.placed-orders .box-container .box{
+    width: 30%;
+    text-align: justify;
+    padding-left: 1em;
+    padding-top: 1em;
+    height: auto !important;
+}
+
+.aoubtn{
+    font-size: 1em;
+    font-family: 'Balsamiq Sans', cursive;
+    border-radius: 0.5em;
+    background: springgreen;
+    padding: 0.3em 1em;
+}
+
+.aodbtn{
+    margin: 0.3em;
+    padding: 0.3em 1em;
+    border-radius: 0.5em;
+    border:2px solid black;
+    text-decoration: none;
+    background-color: orangered;
+    color: black;
+}
+
+.flex-box{
+    margin-top: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-accounts .box-container .box{
+    height: 13em;
+}
+
+.user-accounts .box-container .box span{
+    color: blue;
+}
+
+.user-accounts .box-container .box .delete-btn{
+    background: orangered;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.messages .box-container .box .delete-btn{
+    background: orangered;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: block;
+    width: 20%;
+}
+
+.messages .box-container .box {
+    width: 30%;
+    text-align: justify;
+    padding-left: 1em;
+    height: auto !important;
+
+}
+
+.messages .box-container {
+    justify-content: center;
+    font-size: 25px;
+}
+
+/* media query */
+
+@media (max-width:750px){
+
+    .btn{
+        font-size: 1em;
+    }
+    .add-products form .apflex .apinputbox{
+        width: 100%;
+    }
+    .box{
+        height: 22em;
+    }
+    .placed-orders .box-container .box{
+        height: auto !important;
+    }
+    .box img{
+        height:50%;
+    }
+}
